@@ -5,3 +5,27 @@
     }
   }
 }
+
+.header{
+  // text-align: right;
+  justify-content: left;
+  span{
+    margin: 0 10px 0 10px;
+  }
+
+}
+
+.title{
+  margin: 10px;
+  text-align: center;
+}
+
+main{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.card-footer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}

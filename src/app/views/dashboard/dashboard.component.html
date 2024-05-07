@@ -1,1 +1,22 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, provident deserunt! Sapiente unde voluptatem adipisci quibusdam, illum ex tenetur, magni ratione saepe explicabo autem. Corporis quos velit officiis numquam ipsam.
+<header class="header">
+  <span>Cliquez ici pour ajouter un nouveau contenu</span>
+  <span><button class="btn btn-primary"> <i class="fas fa-plus"></i>
+  </button ></span>
+</header>
+<h2 class="title">Voici toutes les informations que vous avez deja publie dans cette plateforme</h2>
+<main class="container">
+@for (item of image; track $index){
+  <div class="">
+    <img src="assets/photographers/account.png" style="width:70%;height: auto;" alt="{{ item }}">
+    <div>information necessaire pour la photo</div>
+    <div class="card-footer">
+      <span><button class="btn btn-primary">Modifier <i class="fas fa-pencil"></i></button></span>
+      <span><button class="btn btn-primary">Supprimer <i class="fas fa-trash"></i></button></span>
+    </div>
+  </div>
+
+}@empty {
+  <a>Aucune photo</a>
+}
+</main>
+
